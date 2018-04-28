@@ -1,0 +1,94 @@
+#Area of Interest 
+College education is one of the most important lifetime investments, and the impact of education can last long. In this project, we would like to develop several data products to explore/visualize the area of higher education. Particularly, we are going to analyze college education enrollment trend in US across states and over years, as well as the trend across gender and races. Further, the project is going to explore the returns of college education, including relationships among college major, employment rate and salary.  
+
+#Importance of the Topic
+Statistics suggest that college education enrollment in the US is increasing year by year. According to National Center for Education Statistics (NCES, 2018), there are 20.4 million students going to college in 2017, with an increase of 5.1 million since 2000. Specifically, around 11.5 million females and 8.9 million males are attending college in fall 2017. NCES also points out that the percentage of Hispanic and Black students attending college are going up, with Black and Hispanic went from 11.7% to 14.1% and 9.9% to 17.3% respectively from 2000 to 2015.
+
+College degree is also becoming more important in the job market. In 2015, 77.2% of bachelor’s or higher education graduates between 25 to 34 years old had full-time jobs in the labor market. In 2016, the unemployment rate (5%) for young adults with a bachelor’s degree was lower than those who did not (NCES, 2018). 
+
+At the same time, there are ongoing debates regarding whether college is worth the cost. According to a survey conducted by Pew Research Center (Taylor et al., 2011), 57% of Americans think US higher education system is not doing well and not worth the money spent. Meanwhile, 86% college graduates think that college is a good investment for their lives. 
+
+As higher education becomes an important topic for American families and individuals, it is necessary to understand how does college education change over time, what is the demand of job market and how does college education affect long term career. 
+ 
+
+#Topic Exploration/Research Questions
+1). Most popular college majors over years and across states
+Using American Community Survey data, we will be able to visualize the most popular college majors over years and across states on a geospatial map, which might help understand the trend over years and how the majors are related to the geographic factors. 
+
+2). Most popular college majors across gender and race over years
+While the gap of gender inequality of college education is decreasing, it is still worth the effort to look at the variance of college major choices between male and female and how this changes over time. Likewise, we are also exploring how different races favor college majors. 
+
+3). Most lucrative majors over years
+This question aims to look into the returns of investment on education. ACS data provides individuals’ income information, together with the college degree information that allows us to understand the economic values of college majors. Comparisons between the salary and popular college major changes over years and across states will be made for correlation analysis.
+
+4). Relationship between college majors and occupations
+Students attend college and select majors with the hope of success in the labor market. With tuitions skyrocketing in the past few decades, it is important to maximize the return of education investment. By using the 2012 ACS data, we are trying to focus on the match between worker education and jobs. This question can also be analyzed from gender and ethnicities perspectives.  
+
+#Important Sources for Background Information
+According to a study conducted by Georgetown University Center on Education and the Workforce in 2015, a college degree is estimated to increase lifetime earning by one million in average, compared with a high school certificate (Carnevale et al.,2015). However, graduates from different fields of study do not get paid equally. Though the average salary of recent college graduates is $33,000 annually at the entry level, the paycheck varies greatly from major to major(2015). For example, the average salary for a health major graduate is $41,000, while the average salary for a humanities and liberal arts graduate is only $29,000 (2015). 
+
+Apart from the wage expectation, gender also contributes to major preference. In the Staff Report of Federal Reserve Bank of New York, Zafar stated that “Males and females are markedly different in their choice of college major” (2009). This might be explained by two factors: innate abilities and diverge preferences. Moreover, males and females have different tastes regarding the workplace. Specifically, females pay much attention to non-pecuniary outcomes, such as gaining approval of parents and enjoying work at jobs, while males emphasize pecuniary outcomes, namely social status of the jobs, likelihood of finding a job, and earnings profiles at jobs (2009).  
+
+Ethnic diversity also contributes to major preference according to a statistical study by economist Hinrichs. Most popular majors, such as business administration, psychology, nursing, and biology, indicate no divergence across ethnic groups (Hinrichs 2015). However, majors like “economics, finance, and electrical engineering appear on the top-ten list only for Asian students, whereas social work appears on the list only for black students. Elementary education, history, and marketing are unique to the top-ten list for white students” (2015).
+
+College education has a long lasting impact on individuals. A recent research regarding University of Texas System (Carnevale et al.,2017) found out that college major is the most important predictor of wage outcomes and the choice of major outweighs selection of institutions. Similarly, NYU Steinhardt research (NYU, 2015) suggests that meaningful college experiences, including internships and studying abroad, matter less than the major when it comes to job satisfaction and earnings.
+
+As suggested by Insider Higher Ed’s upcoming education trends in 2018, colleges and universities should prepare for some key trends (Peterson & Rudgers, 2018). It suggested that creating a welcoming climate for women and minorities is a long-running issue for college campus, especially with recent events such as #Metoo movement. Further, the continuing impact of declining state support for higher education has generated a new level of concern that colleges and universities need to pay special attention to.
+
+These resources verify the importance of researching different influential trends and aspects of higher education. We will examine these opinions using the data set available by means of data visualization and incorporate the analysis into our data product.
+
+#Data Sources
+1). Primary Datasets
+The primary source being used for the project comes from American Community five-year Public Use Microdata Sample (PUMS) data. The ACS PUMS is an continuing survey that provides detailed information such as demographic, education attainment and employment of Americans year by year. The project will use the survey data from 2009 to 2016. Variables being used in the dataset include demographic information (e.g., gender, age and residency), education attainment (e.g., highest degree achieved and field of degree), as well as employment related information (e.g.,occupation and salary).  
+
+2). Secondary Datasets
+To understand some of the general trends of higher education over years, following data from the National Center for Education Statistics will also be used: 
+
+a). Number and percentage distribution of science, technology, engineering, and mathematics (STEM) degrees/certificates conferred by postsecondary institutions, by race/ethnicity, level of degree/certificate, and gender of student. This data set will help understand the distribution of STEM degrees from dimensions such as gender and race. 
+
+b). Bachelor's degrees conferred by postsecondary institutions, by field of study, by race/ethnicity. Data range for this source is from 1970 through 2016. Using this data set will enable us to figure out the trend of the popularity of majors over time, as well as the percentage distribution of bachelor's degrees conferred by postsecondary institutions in largest fields of study, by sex and by race. 
+
+c). Tuition costs of colleges and universities by state from 2008 to 2016. This data set will allow us to explore the differences in tuition fees, by control and level of institution and state.
+
+#General Outline
+1.Project Background and Description 
+Purpose and background of the project
+Project introduction and scope
+
+2.Research Questions
+What are the most popular college majors over years and across states?
+What are the most popular college majors across gender and race over years?
+What are the most lucrative majors over years?
+What is the relationship between college majors and occupations
+
+3.Exploratory Data Analysis
+Data sources, variables used and data time range for the project
+Methodology of data cleaning, integration and other processing such as sample data weighting
+Visualization of the holistic picture of the datasets
+Data limitations
+
+4.Data Product
+Narratives of interesting aspects of college education
+Reasoning and Evidence
+
+5.Conclusions 
+Key insights generated from data product
+Suggestions and recommendations
+
+6.Limitations
+Limitations of the research
+Suggestions for future research
+
+#Reference
+
+Carnevale A.P., Cheah B., & Hanson A.R. (2015). The Economic Value of College Majors Executive Summary 2015. Georgetown University Center on Education and the Workforce. Retrieved from https://cew.georgetown.edu/wp-content/uploads/Exec-Summary-web-B.pdf
+Carnevale, A.P., Fasules M.L., Stephanie A., Huie B., & Troutman D.R. (2017). The Economic Value of Bachelor’s Degrees from The University of Texas System. Retrieved from https://cew.georgetown.edu/wp-content/uploads/UT-System.pdf
+
+Hinrichs P.L. (2015). Racial and Ethnic Differences in College Major Choice. Retrieved from https://www.clevelandfed.org/newsroom-and-events/publications/economic-trends/2015-economic-trends/et-20150331-racial-and-ethnic-differences-in-college-major-choice.aspx
+National Center for Education Statistics (2018). What are the New Back to School Statistics for 2017?  Retrieved from https://nces.ed.gov/fastfacts/display.asp?id=372
+
+NYU (2015). NYU Study Evaluates the Influence of College Experiences on Career Outcomes. Retrieved from https://www.nyu.edu/about/news-publications/news/2015/april/study-evaluates-the-influence-of-college-experiences-on-career-outcomes.html
+
+Peterson J.A., Rudgers L.M. (2018). Saddle Up: 7 Trends Coming in 2018. Retrieved from https://www.insidehighered.com/views/2018/01/02/predictions-higher-education-coming-year-opinion. 
+Taylor P., Parker K., Fry R., Cohn D’Vera, Wang W., Velasco G., Dockterman D. (2011). Is College Worth It? Retrieved from http://www.pewsocialtrends.org/2011/05/15/is-college-worth-it/
+Zafar B. (2009). College major choice and the gender gap, Staff Report, Federal Reserve Bank of New York, No. 364, Federal Reserve Bank of New York, New York, NY. Retrieved from https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr364.pdf  
