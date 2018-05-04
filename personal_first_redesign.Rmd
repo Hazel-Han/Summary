@@ -31,7 +31,7 @@ Still when I tried to draw a chart to show relation of average numer firearms ow
 
 ![](images/Inkedamerica_LI.jpg)
 
-![](images/firearms and homicides.png)
+![](images/firearms_and_homicides.png)
 #### Detour and reasoning:
 First I image there should be relation between gun numbers and homcides rate then I got a quite disordered chart marks by line which cannot see a relation at all. Therefore I changed marks several times and found bar is a good way to show difference of specific x-axis values, also I searched and found line chart is better be used when only want to see time series (chronological) on the x-axis.
 Still the bar chart is not clear enough for no country name shows on chart. At first I tried to put country name on columns or rows which messed up the chart, finally when use country as lable everything be solved.
@@ -47,9 +47,9 @@ I found chart 8 looks unclear because its colorful background and hiding slant l
 After changed color format of original product to single red color I found it tells relation between law and firearm death more clearly. Also I changed 'at least 1 firearm law' to 'sum of firearm laws' which I think describe relation directly. Finally I update data to 2016 which is latest compare to original data. From result I found after ten years many states without gun laws have added one. However it seems gun death distribution across states didn't change much. From bar chart show relation between laws number and death, we can tell those states who newly passed one gun related law this ten years their firearms death didn't decrease at all and even firearms death of states with one law is higher then states without any law. Therefore whether the 'strong' relation between gun law and death from original data product is because laws or those states tend not to happen gun death themselves, is not clear. 
 ![](images/chart8.PNG)
 
-![](images/law and death.png)
+![](images/law_and_death.png)
 
-![](images/law and death bar.png)
+![](images/law_and_death_bar.png)
 #### Detour and reasoning:
 At first I want to use same slant lines to show laws' number same as original product however when I did that I found it hide background color which make light color seems deep so I move to show number on map directly. Also I tried to add states name on map but found that way will overlap my 'law lables' and finally I decied remove them for I think we only care about relation between law numbers and gun death but not one specific state. Since many states have gun related laws in 2016 it become hard to see relation from one map therefore I draw another bar chart to show it. 
 #### Literature:
