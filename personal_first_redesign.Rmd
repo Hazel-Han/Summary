@@ -1,52 +1,55 @@
 # First Version of redesign
 ## Zhonghe Han
 
-![](images/aging_nation.jpg)
+### Finding 1
 
-Finding 1
-
-Developing process:
+#### Developing process:
 When looking at graph 3 in original graph product I felt that chart is not convinced to tell the increase trend of gun shootings, for it didn't compare data before and after 2012 and hard to make sense. Therefore I found data source of each gun inceidents from 2014 to 2018 and plan to draw graph to see whether gun accidents increase recent years or not. 
 
-Data wrangling steps:
+#### Data wrangling steps:
 First I draw a map of America gun accidents, I found it looks pretty same to existing data product. 
 However, when using line chart to show trend from 2013 to 2017 I found it arrived the peak in 2016 and in 2017 the total number of gun accidents decrease a lot and average number is same with 2015's average number. Though 2018 only passed a third, as shown in the chart the number of gun incedients is low. So actually the existing product hides the trend behind graph for it use overlying graph which make audience feel America experienced tons of mass shootings year by year.
-
-Detour and reasoning:
+![](images/2014-2017.png)
+![](images/numbers.png)
+#### Detour and reasoning:
 When draw line chart, in graph it shows decrease trend in number of records in 2018 which may still same reason as above. However my goal is to show a decrease since 2016, so I kept data of 2018 and let graph seems more convincing. 
 Inversely, when draw world map, due to less month passed in 2018 if compared with other years it may show a huge decrease if using 2018 as deep color. Therefore I use 2017 as deep color and other years as light color background.
 Unfortunately I dnd't find data before 2013 but trend from 2014 to 2018 still make the existing prodcut unconvicing. 
 
-Literature:
+#### Literature:
 Found in several report it shows a decrease of gun sale since 2017 which may lead to the decrease of gun record. The reason of gun sale decrease may related to political, specificly altitude of President concerned. (Reference: https://www.theguardian.com/us-news/2017/aug/24/gun-sales-decline-trump-controls  http://fortune.com/2017/09/11/trump-gun-sales-decline/)
 
-Finding 2
+### Finding 2
 
-Developing process:
+#### Developing process:
 In chart 1 it tells America has much more firearms homicides comare to other countries, especially developed countries. And the data product owe this to America has way more guns than other developed nations. So is there real a linear relation between guns number and firearms homicides? I found data of World firearms murders and ownership which includes variable like percent of homcides by firearm, homicides by firearm rate per 100,000 population, average firearms per 100 people and average total all civilian firearms. 
 
-Data wrangling steps:
-In the chart I changed existing product form which only shows several developed countries into worldwide map, instead I use bar chart to show all countries homesides by firearm per 1 million people and found the rate of United States is actually low. 
-First chart shows America and second gives a whole picture. So we can see in existing data product it use only several developed country which has low rate of homicides and only want to stand out America, which is actually not true. 
+#### Data wrangling steps:
+In the chart I changed existing product form which only shows several developed countries into worldwide map, instead I use bar chart to show all countries homesides by firearm per 1 million people and found the rate of United States is actually low. Since so many countries there I circled America in red. So we can see in existing data product it use only several developed country which has low rate of homicides and only want to stand out America, which is actually not true. 
 Still when I tried to draw a chart to show relation of average numer firearms owning and homicides by firearm, I found it is hard to tell the relation. Actually we can say there is no clear relation between this two variable and cannot say gun direct related to homcides rate. The conclusion in existing chart 1 is totally loose.
-
-Detour and reasoning:
+![](images/chart1.PNG)
+![](images/Inkedamerica_LI.jpg)
+![](images/firearms and homicides.png)
+#### Detour and reasoning:
 First I image there should be relation between gun numbers and homcides rate then I got a quite disordered chart marks by line which cannot see a relation at all. Therefore I changed marks several times and found bar is a good way to show difference of specific x-axis values, also I searched and found line chart is better be used when only want to see time series (chronological) on the x-axis.
 Still the bar chart is not clear enough for no country name shows on chart. At first I tried to put country name on columns or rows which messed up the chart, finally when use country as lable everything be solved.
 
-Literature:
+#### Literature:
 According to the literature found on the source of existing data product, the US has the highest gun ownership rate in the world but does not have the worst firearm murder rate. (Reference: https://www.theguardian.com/news/datablog/2012/jul/22/gun-homicides-ownership-world-list)
 Also on wikipedia I found a list of Firearm-related death rate per 100,000 population per year. From that we can see countries have more homicides than America have less guns. And many developed countries such as Uruguay,Switzerland Austria and etc. who have small number of gun related homcides, they have much more guns compare to those countries who have highly gun related homcides. (Reference: https://en.wikipedia.org/wiki/List_of_countries_by_firearm-related_death_rate)
 
-Finding 3
-Develop process:
+### Finding 3
+#### Develop process:
 I found chart 8 looks unclear because its colorful background and hiding slant lines so I searched data of Firearm law cross states and total number of deaths and injured by firearms in 2016. 
-Data wrangling steps:
+#### Data wrangling steps:
 After changed color format of original product to single red color I found it tells relation between law and firearm death more clearly. Also I changed 'at least 1 firearm law' to 'sum of firearm laws' which I think describe relation directly. Finally I update data to 2016 which is latest compare to original data. From result I found after ten years many states without gun laws have added one. However it seems gun death distribution across states didn't change much. From bar chart show relation between laws number and death, we can tell those states who newly passed one gun related law this ten years their firearms death didn't decrease at all and even firearms death of states with one law is higher then states without any law. Therefore whether the 'strong' relation between gun law and death from original data product is because laws or those states tend not to happen gun death themselves, is not clear. 
-Detour and reasoning:
+![](images/chart8.PNG)
+![](images/law and death.png)
+![](images/law and death bar.png)
+#### Detour and reasoning:
 At first I want to use same slant lines to show laws' number same as original product however when I did that I found it hide background color which make light color seems deep so I move to show number on map directly. Also I tried to add states name on map but found that way will overlap my 'law lables' and finally I decied remove them for I think we only care about relation between law numbers and gun death but not one specific state. Since many states have gun related laws in 2016 it become hard to see relation from one map therefore I draw another bar chart to show it. 
-Literature:
+#### Literature:
 Many states support the notion that firearm regulation is a necessary measure in preventing and reducing gun deaths; however, many other states do not take this stance. Maybe is because till now no convincing reason or chart can tell firearm regulation is positive. (Reference: https://www.safehome.org/resources/gun-laws-and-deaths/ )
 
-Future features/enhancements
+### Future features/enhancements
 According to what already have it seems America gun problem is not as serious as image and gun related laws' effect are also hard to tell. Those results violate general knowledge so in future I decide to explore more datasets to see why these results happen and what true problem of American gun is. 
