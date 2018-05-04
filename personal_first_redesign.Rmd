@@ -30,7 +30,7 @@ In the chart I remove existing product form which only shows several developed c
 Still when I tried to draw a chart to show relation of average numer firearms owning and homicides by firearm worldwide, I found it is hard to tell the relation. Actually we can say there is no clear relation between this two variable and cannot say gun direct related to homcides rate. The conclusion in existing chart 1 is totally loose.
 ![](images/chart1.PNG)
 
-![](images/Inkedamerica_LI.jpg)
+![](images/rot.jpg)
 
 ![](images/firearms_and_homicides.png)
 #### Detour and reasoning:
