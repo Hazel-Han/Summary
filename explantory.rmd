@@ -23,7 +23,7 @@ edu = fread('D:/SCU/Visualization/group project/ss16pms.csv')
 head(edu)
 dim(edu)
 names(edu)
-edu_clear = edu[,c("ST","ADJINC","FOD1P","FOD2P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO")]
+edu_clear = edu[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO")]
 ```
 Here is a table of variable description.
 ```{r}
