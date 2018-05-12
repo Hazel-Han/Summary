@@ -1,13 +1,13 @@
 # Exploratory Data Analysis -- Higher Education
 ## Feng Wang, Jieyi Deng, Tianmin Li, Yingjie Yu, Zhonghe Han
 
-## Data collect, clean and integrate
+## 1 Data collect, clean and integrate
 
-### Collect
+### 1.1 Collect
 Our dataset comes from United States Census. This dataset is about American Community Survey PUMS Data from 2012-2016, covers data from housing record to person record. Specificlly, from this dataset we know more about jobs and occupations, educational attainment, veterans, whether people own or rent their homes, and other topics. We choose related variables from that to help us know more insight of education. 
 [Recerence: https://www2.census.gov/programs-surveys/acs/data/pums/2016/5-Year/]
 
-### Data chosen and Explanation:
+### 1.2 Data chosen and Explanation:
 All variables we chose from our dataset are based on our exploration/research questions. First we want to see most popular majors over year and across states. So we picked up 'ST' which means different states, 'SERIALNO' gives identical number for each interviewee and include survey time. 'Fod1p' stand for specific majors. Also 'AGEP' means the exact age when people did that survey. With this four variables we can get data of people's college enrollment year, their majors and location. 
 
 Second we want to know most popular college majors across gender and race over years, for this question we need variables of people's majors, gender and race. Therefore we chose variables of 'SEX' which stand for male and female, as well as 'RAC1P' show race of people. 
@@ -48,7 +48,7 @@ library(DT)
 des_table = datatable(cbind(name,des))
 des_table
 ```
-### Clean and Integrate:
+### 1.3 Clean and Integrate:
 With raw data we chose 16 variables then we change some of them into form that easy to be used. Since we don't have data of when people enrolled college we use survey and age to create a new variable called college_year. Specificlly, we split first four numbers of 'serialno' to get survey year then minus age and plus 18 to get enrollment year, here we assume people went to their college at 18 years old. 
 
 Since our data set is a survey which includes all age level of people, we remove observations that don't have major information, here we assume observations with major include all interviewees that already got bachelor degree.
@@ -59,8 +59,8 @@ edu_clear$college_year<-edu_clear$survey_year - edu_clear$AGEP + 18
 head(edu_clear) 
 ```
 
-## Understanding of dataset
+## 2 Understanding of dataset
 graph and summary
-## Limitations
+## 3 Limitations
 only college people, didn/t compare college with other class? 
 lake data of enrollment year?
