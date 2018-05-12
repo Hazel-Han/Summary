@@ -1,0 +1,66 @@
+# Exploratory Data Analysis -- Higher Education
+## Feng Wang, Jieyi Deng, Tianmin Li, Yingjie Yu, Zhonghe Han
+
+## Data collect, clean and integrate
+
+### Collect
+Our dataset comes from United States Census. This dataset is about American Community Survey PUMS Data from 2012-2016, covers data from housing record to person record. Specificlly, from this dataset we know more about jobs and occupations, educational attainment, veterans, whether people own or rent their homes, and other topics. We choose related variables from that to help us know more insight of education. 
+[Recerence: https://www2.census.gov/programs-surveys/acs/data/pums/2016/5-Year/]
+
+### Data chosen and Explanation:
+All variables we chose from our dataset are based on our exploration/research questions. First we want to see most popular majors over year and across states. So we picked up 'ST' which means different states, 'SERIALNO' gives identical number for each interviewee and include survey time. 'Fod1p' stand for specific majors. Also 'AGEP' means the exact age when people did that survey. With this four variables we can get data of people's college enrollment year, their majors and location. 
+
+Second we want to know most popular college majors across gender and race over years, for this question we need variables of people's majors, gender and race. Therefore we chose variables of 'SEX' which stand for male and female, as well as 'RAC1P' show race of people. 
+
+Then we care the most lucrative majors over years, here we need information of people's income and their major when graduated. We already had major data, so we included 'pincp' which means people's total income(any income sources). 
+
+Last we are interested in realtionships between college and occupations, here we need people's major and which industry field they entered after graduated. To consider it throughly, we included both 'INDP' and 'NAICSP' mean different classify method, first one is industry recode and later one is code of North American Industry Classification System. 
+
+Except variables mentioned above, we also included variable like 'ADJINC', means adjustment factor for income and earnings dollar amounts which helps us capture income more precisely,taking inflation into consideration; 'SCH','SCHG' and 'SCHL' help us segment people by with or without college experience, also college catagory; 'CITWP' which means if people were naturalized and when, we would like to see relation between immigration and major choice also its effect to state enrollment; 'COW' which stands by worker catgory, we think different major may lead to different work class. 
+```{r}
+library(data.table)
+edu = fread('D:/SCU/Visualization/group project/ss16pms.csv')
+head(edu)
+dim(edu)
+names(edu)
+edu_clear = edu[,c("ST","ADJINC","FOD1P","FOD2P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO")]
+```
+Here is a table of variable description.
+```{r}
+name = names(edu_clear)
+st = 'State Code based on 2010 Census definitions'
+adjinc = 'Adjustment factor for income and earnings dollar amounts (6 implied decimal places)'
+fod1p = 'Recoded field of degree - first entry'
+sch = 'School enrollment'
+schg = 'Grade level attending'
+schl = 'Educational attainment'
+indp = 'Industry recode based on 2012 IND codes'
+naicsp = 'NAICS Industry code based on 2012 NAICS codes'
+sex = 'sex'
+rac1p = 'Recoded detailed race code'
+pincp = "Total person's income (signed)"
+agep = 'age'
+citwp = 'Year of naturalization write-in'
+cow = 'Class of worker'
+serialno = 'Housing unit/GQ person serial number'
+des = c(st,adjinc,fod1p,sch,schg,schl,indp,naicsp,sex,rac1p,pincp,agep,citwp,cow,serialno)
+library(DT)
+des_table = datatable(cbind(name,des))
+des_table
+```
+### Clean and Integrate:
+With raw data we chose 16 variables then we change some of them into form that easy to be used. Since we don't have data of when people enrolled college we use survey and age to create a new variable called college_year. Specificlly, we split first four numbers of 'serialno' to get survey year then minus age and plus 18 to get enrollment year, here we assume people went to their college at 18 years old. 
+
+Since our data set is a survey which includes all age level of people, we remove observations that don't have major information, here we assume observations with major include all interviewees that already got bachelor degree.
+```{r}
+edu_clear$survey_year <-substr(edu_clear$SERIALNO,1,4)
+edu_clear$survey_year <- as.numeric(edu_clear$survey_year)
+edu_clear$college_year<-edu_clear$survey_year - edu_clear$AGEP + 18
+head(edu_clear) 
+```
+
+## Understanding of dataset
+graph and summary
+## Limitations
+only college people, didn/t compare college with other class? 
+lake data of enrollment year?
