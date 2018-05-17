@@ -64,3 +64,8 @@ graph and summary
 ## 3 Limitations
 only college people, didn/t compare college with other class? 
 lake data of enrollment year?
+
+
+```{r}
+en = fread('D:/SCU/Visualization/group project/adm2016.csv')
+```
