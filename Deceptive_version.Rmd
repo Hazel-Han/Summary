@@ -8,8 +8,10 @@ However when replaced day distribution by month distribution, I found the origin
 ![](images/mass_shooting_calendar.png)
 ![](images/opposite4.png)
 ### Data wrangling and develop process:
-First let's take a look of original data
+First let's take a look of original data:
+
 ![](images/data1.PNG)
+
 Original data product try to explain a fact that America happens mass shooting everyday and its drew 300 more small grids, which make people feel gun problem is serious and gun shootings happen everyday. For thought with 300 more grids it is hard to tell trend and hide truth, I sum up daily accident and draw by month, with new chart I found summer leads gun shooting easily. In new chart I use months as x axis and shooting counts in each month as y axis.
 
 Actually if draw by day it gives a micro view while by month we see a macro view. My chart distracts people's attention from everyday to those severe months, it make people feel America not happens gun shooting everyday but only in particular months. What government should do is not decrease number of guns but enhance security during summer.
@@ -27,8 +29,10 @@ However when I replaced y axis with count instead of rate, the trend changes. Fr
 ![](images/count1994.png)
 
 ### Data Wrangling and develop process:
-Let's take a look of dataset
+Let's take a look of dataset:
+
 ![](images/data2.PNG)
+
 Instead using rate of death per 100,000 people, I changed y axis into absolute count. Because thirty years is a long time period and population in America changed a lot (1980:226,545,805,2010:308,745,538), if only use rate as y axis it may hide truth. Using absolute count audience can see the real situation and trend. 
 
 When drawing chart I found if add count in 2010 which show little decrease, the increasing trend after 2000 will be affected so I remove year 2010. Still originally range of y axis is from 0 to 20k, in order to show a explicit trend I adjusted it into 10k to 17k. 
@@ -45,6 +49,7 @@ But when go deeply to dataset I found not all races tend to support right of own
 ![](images/races.png)
 ### Data wrangling and develop process:
 Let's take a look of dataset:
+
 ![](image/Data3.PNG)
 Due to different classification belong to different files, here I only put the race one.
 
