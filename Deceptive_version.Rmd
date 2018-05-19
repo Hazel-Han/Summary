@@ -18,7 +18,7 @@ In original data product, graph 9 shows a slow decreasing trend of gun homicides
 
 However when I replaced y axis with count instead of rate, the trend changes. From new chart we can see different from trend has been decreasing recently, total number of death actually behave more like a wave. It decrease from 1980 to 1984 then increase, arrive a peak in 1993, decrease from 1993 to 2000 and after that it increase again. In a word, trend in past two decades is not a decrease but it just arrive a low ebb in 2000 and will increase again in future.
 ![](images/firearm_homicide_deaths.png)
-![](images/count1980.png)
+![](images/count1994.png)
 ### Making of:
 Instead using rate of death per 100,000 people, I changed y axis into absolute count. Because thirty years is a long time period and population in America changed a lot (1980:226,545,805,2010:308,745,538), if only use rate as y axis it may hide truth. Using absolute count audience can see the real situation and trend. 
 
