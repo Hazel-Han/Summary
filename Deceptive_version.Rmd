@@ -32,7 +32,7 @@ In original data product, graph 15 shows trend of control gun ownership and prot
 
 But when go deeply to dataset I found not all races tend to support right of own guns. In new chart I drew, we can see actually white race are big fan for gun owning, from 2007 white people's number of support gun right surpass number that control gun right. However when we see Black and Hispanic people, their lines of control and protect are almost two parallels. In another word, no much changes showed among black and hispanic people.
 ![](images/gun_control_public_opinion.png)
-![](images/Gunsraces.png)
+![](images/races.png)
 ### Making of:
 When looking at original dataset, I found except overall view it also shows other classification such as gender, age, race, education and etc. After drew chart for each classification I found different classification show various trend. Then I pick race instead overall which used by original product as x axis, for race different from original chart most. 
 
