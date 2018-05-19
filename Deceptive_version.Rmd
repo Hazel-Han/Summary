@@ -50,7 +50,7 @@ But when go deeply to dataset I found not all races tend to support right of own
 ### Data wrangling and develop process:
 Let's take a look of dataset:
 
-![](image/Data3.PNG)
+![](images/Data3.PNG)
 Due to different classification belong to different files, here I only put the race one.
 
 When looking at original dataset, I found except overall view it also shows other classification such as gender, age, race, education and etc. After drew chart for each classification I found different classification show various trend. Then I pick race instead of overall which used by original product as x axis, for race variable make new chart different from original chart most. 
