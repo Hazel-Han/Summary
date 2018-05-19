@@ -33,7 +33,7 @@ Let's take a look of dataset:
 
 ![](images/data2.PNG)
 
-Instead using rate of death per 100,000 people, I changed y axis into absolute count. Because thirty years is a long time period and population in America changed a lot (1980:226,545,805,2010:308,745,538), if only use rate as y axis it may hide truth. Using absolute count audience can see the real situation and trend. 
+Instead using rate of death per 100,000 people, I changed y axis into absolute count. Because thirty years is a long time period and population in America changed a lot (from 2 hundard million in 1980 to 3 hundard million in 2010), if only use rate as y axis it may hide truth. Using absolute count audience can see the real situation and trend. 
 
 When drawing chart I found if add count in 2010 which show little decrease, the increasing trend after 2000 will be affected so I remove year 2010. Still originally range of y axis is from 0 to 20k, in order to show a explicit trend I adjusted it into 10k to 17k. 
 
