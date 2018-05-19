@@ -42,9 +42,9 @@ Try to find gun homicides count after 2010 and to see if there is a clear increa
 
 ## Finding 3
 ### Content and difference
-In original data product, graph 15 shows trend of control gun ownership and protect right of own guns in recent twenty decades. From graph we see more and more people began protect the right of own guns and less people support control gun ownership. 
+In original data product, graph 15 shows trend of control gun ownership and protect right of own guns in recent twenty decades. From graph we see more and more people began protect the right of own guns and less people support control gun ownership. This give audience a feeling of more and more American tend to own guns which is quite creepy.
 
-But when go deeply to dataset I found not all races tend to support right of own guns. In new chart I drew, we can see actually white race are big fan for gun owning, from 2007 white people's number of support gun right surpass number that control gun right. However when we see Black and Hispanic people, their lines of control and protect are almost two parallels. In another word, no much changes showed among black and hispanic people. So we cannot say support for gun ownership has sharply increased and in fact except white people no one is keen on supporting gun ownership.
+But when go deeply to dataset I found not all races tend to support right of own guns. In new chart I drew, we can see actually white race are big fan for gun owning, from 2007 white people's number of support gun right surpass number that control gun right. However when we see Black and Hispanic people, their lines of control and protect are almost two parallels. In another word, no much changes showed among black and hispanic people. So we cannot say support for gun ownership has sharply increased and in fact except white people no one is keen on supporting gun ownership. In this way audience will feel at least part of American are rational. 
 ![](images/gun_control_public_opinion.png)
 ![](images/races.png)
 ### Data wrangling and develop process:
