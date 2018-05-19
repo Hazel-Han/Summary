@@ -4,7 +4,7 @@
 ### Content and difference
 In original data product, graph 4 drew distribution of mass shootings happened per day in 2015. From that we can see on average America has mass shootings almost everyday and it seems no difference of number of gun shootings from day to day, which made America like a crazy and dangerous country. 
 
-However when replaced day distribution by month distribution, I found the original data product hide trend of mass shootings. In fact a clear trend shows in new chart, from May to Sep number of mass shootings are almost twice than the other months. 
+However when replaced day distribution by month distribution, I found the original data product hide trend of mass shootings. In fact a clear trend shows in new chart, from May to Sep number of mass shootings are almost twice than the other months. Therefore conclusion here is different from original data product, problem in America is not gun but security during summer.
 ![](images/mass_shooting_calendar.png)
 ![](images/opposite4.png)
 ### Data wrangling and develop process:
