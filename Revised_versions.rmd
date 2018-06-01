@@ -4,6 +4,7 @@
 ### Finding 1
 ### Improvement
 In first version graph I showed trend of sum number records for mass gun shooting from 2014 to 2018. From the chart we can see it told mass gun shooting in America arrived its peak in 2016 and then fall down in 2017 and different from view 'mass shooting increasing after 2012' presented by original data product.
+![](images/mass_shootings_map.png)
 ![](images/mass14to18.png)
 However this trend is different from common sense and frequent mass shooting make us feel terrorist never reduce their willing to shoot. Is people really decreased willing of using guns or there is other reason? From some essays I found reason for decreasing gun shooting in 2017. Since new policy make fears of tighter controls to buy guns fade, people tend not buy guns rushly and gun sales decline in 2017. We may say less gun selling lead to decrease of mass gun shooting though people didn't do this consciously. There maybe other reasons but this one can explain part of decreasing. From chart below we can see relation between gun selling and mass shooting. I use data of number for background checking when buy guns as y axis and year as x axis.
 ![](images/1sell_mass.png)
@@ -13,6 +14,7 @@ Last time this graph is already quite satisfying so I decide to find more explai
 ### Finding 2
 ### Improvement
 From first version chart I drew, I tried to show relation between firearms number and homicide by firearm. But due to included all countries and didn't sort any variable, the chart seems confused and disordered. We cannot tell how America perform compare to other countries. 
+![](images/chart1.png)
 ![](images/firearms_and_homicides.png)
 In revising chart, I choose to draw these two variables in two different charts and both as y axis with same countries name as x axis. In this way it is easier for audience to see gun amount and homicide by firearm among countries. Also I only use developed countries instead all countries, for I think America is a developed country also can make chart more clear. From this chart, we can see average firearms per 100 people in America is twice than the second country and its number is around 90, which means on average in 100 American 90 of them have gun. Also, number of homicide by firearm per 100k people in America is top one and almost four times than second country. This actually prove original data product's claim, more guns in lead to high homicide by firearm but more clear than original one, which only shows number of homicide by firearm. 
 Still finding 2 enhance conclusion of finding 1, more guns do lead to more gun related events.
@@ -23,6 +25,7 @@ Finding 2 is based on chart 1 in original data prodcut. When thinking how to imp
 ### Finding 3
 ### Improvement
 From first version chart, I tried to explain relation between gun related laws and firearm death rate. However in first version, I piled up states with same numer gun related laws together in one same bar, which was a bad way to show relation and easily became a misleading chart. For instance, in that chart it seems states with one law term tend to have more firearm death than states without any law (which is not true), for number of states with one law is more than number of states without law.
+![](images/chart8.png)
 ![](images/law_and_death_bar.png)
 In my revising verison, I seperated states into three groups, states without law, states with one law and states with two more laws. Then instead piling up all states to one bar, using states name as x axis, firearm death rate per 100k people as y axis, I drew three charts for each group and showed average death number on chart. In this way, we can see relation between gun related laws and gun death easily. States without any gun laws average gun death is 15.53, in states with one law it decline to 13.79 and in states with two more laws it lower to 6.68. Therefore we may safely say more gun related laws lead to less gun related death.
 ![](images/law_gun.png)
@@ -36,6 +39,7 @@ When making this chart I was confused by original data product as well as my fir
 ### Finding 1
 ### Improvement
 From first deception version, I tried to show trend of mass shooting by months of 2015 and claimd America is not a crazy war country which has indiscriminating mass shooting everyday. We can see compare to original data product chart 4, my first version make people focus on mass shooting happened in summer but not everyday. I want to explain we shouldn't pass the buck to gun blindly but enhance security in summer.
+![](images/mass_shooting_calendar.png)
 ![](images/opposite4.png)
 For in old version it only showed one year which is not representative enough. In revise version, I expanded range from 2014 to 2017, which can tell if 2015 was only an outlier. Here I changed month to quarter and can tell seasons trend more easily. Clearly from chart below we can see always mass shooting records increase from second quarter and arrive peak in third quarter which is exactly summer. According to essays of ANDREW W. LEHREN and AL BAKER in 2009, people tend to crime in heat of summer. Summer is when people get together. More specifically, casual drinkers and drug users are more likely to go to bars or parties on weekends and evenings. These people in the social mix, flooding the city’s streets and neighborhood bars, feed the peak times for murder.
 ![](images/massquarter.png)
@@ -43,9 +47,16 @@ With this chart I am not aiming to say gun problem is not serious, but vice vers
 ### Polishing
 When drawing first version chart I followed the audience model. A little difference from original model, I changed main model from audience to the author of original data product. That author try to rebut gun supporters to say gun shootings never stop, this is what they want. Their metric showed mass shooting is happening everyday then what they fear become evidence showing a stop of gun shootings. Following this, I replaced day distribution with month distribution, which shows a 'stop' in seasons except summer. Though my chart didn't show exactly disappearance of mass shootings, it change no difference trend into rise and fall trend. 
 ### Finding 2
-### Improvement
+### Improvemet
+My finding 2 in first deception version showed trend of gun homicides from 1994 to 2009. To rebut original data product, I changed homicide rate into homicide count and remove years before 1994. Then my chart told a fall and rise trend of gun homicides over past decades. Compare to original chart which has a high homicides around 1990 and hide the small increasing trend after 2000, my first version excluded year before 1994 and showed a different trend. 
+![](images/firearm_homicide_deaths.png)
+![](images/count1994/png)
+Since my first deception version only till year 2009 and far away from now, it is less persuasive. I added data from 2009 to 2016 and update my chart. From new chart below we can see another fall and rise after 2006. Still peak in 2016 in new chart is lower than peak in 1994, which means if follow year range of original data product audience cannot see the increasing trend after 2014 because that high number in 1994 will hide other peak. 
+![](images/count2016.png)
+Therefore my new chart continue contradicts original data product, no any good news in firearm homicides and it increase heavily during recent years. This enhance my claim in previous findings, gun related death is increasing and American should control guns anyhow.
 ### Polishing
-
+Since original data product showed a trend of decreasing, my deceptive version should have an opposite claim from original claim. For I already have a clear goal, I followed GQM model. Based on my goal, my question become finding rising years in dataset. According to this question, I designed my metric with: removing year before 1994 which may hide later rising trend, using count instead rate which has no clear rising trend in recent decades and adding latest data till 2016 which showed explicit rising trend and helped to solve the question. 
 ### Finding 3
 ### Improvement
+![](images/gun_control_public_opinion.png)
 ### Polishing
