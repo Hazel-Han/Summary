@@ -44,6 +44,7 @@ In my revising verison, I seperated states into three groups, states without law
 ![](images/law_gun.png)
 
 public link: https://public.tableau.com/profile/zhonghe.han#!/vizhome/Gun_laws/Dashboard1?publish=yes
+
 Also I drew a general chart include all states to show this relation by color. We can see from second chart, the deeper the color the more states have gun laws. And similarly, we see states with more laws tend to lower their firearm death number.  
 Again finding 3 enhance previous two findings, by controlling guns America will have less gun death.
 ![](images/law_death.png)
@@ -64,6 +65,7 @@ For in old version it only showed one year which is not representative enough. I
 ![](images/massquarter.png)
 
 public link: https://public.tableau.com/profile/zhonghe.han#!/vizhome/mass_quarter/Sheet1?publish=yes
+
 According to essays of ANDREW W. LEHREN and AL BAKER in 2009, people tend to crime in heat of summer. Summer is when people get together. More specifically, casual drinkers and drug users are more likely to go to bars or parties on weekends and evenings. These people in the social mix, flooding the city’s streets and neighborhood bars, feed the peak times for murder. So if government and people who tend control gun want to do something, it is better to begin from security problem in summer.
 
 ### Polishing
@@ -79,6 +81,7 @@ Since my first deception version only till year 2009 and far away from now, it i
 ![](images/count2016.png)
 
 public link: https://public.tableau.com/profile/zhonghe.han#!/vizhome/1994-2016_gun_homicides/Sheet2?publish=yes
+
 Therefore my new chart continue contradicts original data product, no any good news in firearm homicides and it increase heavily during recent years. This enhance my claim in previous findings, gun related death is increasing and American should control guns anyhow.
 ### Polishing
 Since original data product showed a trend of decreasing, my deceptive version should have an opposite claim from original claim. For I already have a clear goal, I followed GQM model. Based on my goal, my question become finding rising years in dataset. According to this question, I designed my metric with: removing year before 1994 which may hide later rising trend, using count instead rate which has no clear rising trend in recent decades and adding latest data till 2016 which showed explicit rising trend and helped to solve the question. 
@@ -93,10 +96,12 @@ But when looked at my first version graph I felt little confused because the col
 ![](images/1races.png)
 
 public link: https://public.tableau.com/profile/zhonghe.han#!/vizhome/races_view/Sheet1?publish=yes
+
 Also I tried to find more characters for people who tend to support gun control within dataset. Then I found people who from Urban, with race of black and hispanic, ideology are liberal and from Democrat party tend to control guns. But since so many catagories are included in this chart, it is not easy to see. It become a flaw for this chart.
 ![](images/publicview.png)
 
 public link: https://public.tableau.com/profile/zhonghe.han#!/vizhome/pubilcview/Sheet1?publish=yes
+
 With my deceptive chart, I rebutted original data product from a micro view. Instead looking overall view I grouped people by different characters and gave a contradictive picture compare to original data product. 
 ### Polishing
 When revising my second version chart, I was thinking data pixel ratio mentioned in class. Since my first version looks confused I was thinking how to make an aesthetic visualization. Then I changed colors that didn't help to explain my data and even draw audience attention with no good reasons. In my final version I tried to keep three main color to represent each race. Also I kept lable number both at start and end of line to help explain white race tend to support gun right and the other two races tend to control guns. 
