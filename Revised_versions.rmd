@@ -66,3 +66,11 @@ Also I tried to find more characters for people who tend to support gun control 
 With my deceptive chart, I rebutted original data product from a micro view. Instead looking overall view I grouped people by different characters and gave a contradictive picture compare to original data product.
 ### Polishing
 When revising my second version chart, I was thinking data pixel ratio mentioned in class. Since my first version looks confused I was thinking how to mamke an aesthetic visualization. Then I changed colors that didn't help to explain my data and even draw audience attention with no good reasons. In my final version I tried to keep three main color to represent each race. Also I kept lable number both at start and end of line to help explain white race tend to support gun right and the other two races tend to control guns. 
+## Reference
+1. USA population [https://en.wikipedia.org/wiki/Demography_of_the_United_States]
+2. Gun homicides information [https://www.cdc.gov/injury/wisqars/], [http://www.gunpolicy.org/firearms/region/united-states]
+3. Mass shootings [https://www.vox.com/a/mass-shootings-sandy-hook]
+4. Public views about guns [http://www.people-press.org/2017/06/22/public-views-about-guns/#gunowners]
+5. Data Pixel Approach [https://www.smashingmagazine.com/2011/11/the-data-pixel-approach-to-improving-user-experience/]
+6. Number of Killings Rises With Heat [https://www.nytimes.com/2009/06/19/nyregion/19murder.html]
+7. FBI gun background check [https://www.fbi.gov/file-repository/nics_firearm_checks-month_year.pdf/view ]
