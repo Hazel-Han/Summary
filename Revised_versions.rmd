@@ -17,6 +17,7 @@ From first version chart I drew, I tried to show relation between firearms numbe
 ![](images/chart1.PNG)
 ![](images/firearms_and_homicides.png)
 In revising chart, I choose to draw these two variables in two different charts and both as y axis with same countries name as x axis. In this way it is easier for audience to see gun amount and homicide by firearm among countries. Also I only use developed countries instead all countries, for I think America is a developed country also this make chart more clear. From this chart, we can see average firearms per 100 people in America is twice than the second country and its number is around 90, which means a higher gun ownership rate that in 100 American 90 of them have gun. Also, number of homicide by firearm per 100k people in America is top one and almost four times than second country. This actually prove original data product's claim, more guns lead to high homicide by firearm but more clear than original one, which only shows number of homicide by firearm. 
+
 Still finding 2 enhance conclusion of finding 1, more guns do lead to more gun related events.
 ![](images/1developed.png)
 ### Polishing
@@ -69,6 +70,7 @@ Also I tried to find more characters for people who tend to support gun control 
 With my deceptive chart, I rebutted original data product from a micro view. Instead looking overall view I grouped people by different characters and gave a contradictive picture compare to original data product. 
 ### Polishing
 When revising my second version chart, I was thinking data pixel ratio mentioned in class. Since my first version looks confused I was thinking how to make an aesthetic visualization. Then I changed colors that didn't help to explain my data and even draw audience attention with no good reasons. In my final version I tried to keep three main color to represent each race. Also I kept lable number both at start and end of line to help explain white race tend to support gun right and the other two races tend to control guns. 
+
 Also at first when design this deceptive chart I followed audience model. I see myself as audience and what I want is opposite from original data product, that would be show American are not tending to support gun rights. Then I think I need data that show keeping trend of control gun to support my 'need'. With different characters of people, I found drawing chart from micro view can support my claim. Relativly, I fear those characters which show an increasing trend of supporting gun rights and that would be rebuttal of my claimi, so I didn't include those characters in my second revise chart.
 ## Reference
 1. USA population [https://en.wikipedia.org/wiki/Demography_of_the_United_States]
