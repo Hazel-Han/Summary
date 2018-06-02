@@ -3,7 +3,7 @@
 ## Redesign
 ### Finding 1
 ### Improvement
-#### Original and first
+* Original and first 
 In first version graph I showed trend of sum number records for mass gun shooting from 2014 to 2018. From the chart we can see it told mass gun shooting in America arrived its peak in 2016 and then fall down in 2017 and different from view 'mass shooting increasing after 2012' presented by original data product. Compare to first version which is unclear by only showing average lines, this time I change lable on average into specific mean number and added a trend line to show rise and fall from 2015 to 2017.
 ![](images/mass_shootings_map.png)
 ![](images/1mass14to18.png)
