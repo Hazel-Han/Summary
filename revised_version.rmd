@@ -22,7 +22,7 @@ Except variables mentioned above, we also included variable like 'ADJINC', means
 
 Here is a table of variable description.
 
-!!!!!!![](images/acs_description.png)此处有甜饼eda的图
+![](group_image/acs_description.png)
 
 ### Data Cleaning and Integration
 Data used for the projects come from US Census Bureau and Centers for Disease Control and Prevention. Following are the data cleaning process to retrieve the information we need to answer the research questions.
@@ -130,6 +130,7 @@ Here in finding one our potential audience are parents prepare to find proper ma
 
 ## Finding 2:  Male and female are remarkably different in choosing their college majors, which could potentially be the reason of wage gap.
 ![](group_image/finding2.png)
+
 This graph presents the total count of the top six majors divided by gender, public file [link](https://public.tableau.com/profile/feng.wang2440#!/vizhome/top6popularmajorsbygender/Sheet1?publish=yes)
 
 ### Description
@@ -167,7 +168,7 @@ Compared with the first version, we improved all of the graphs by deleting graph
 According to the Staff Report of Federal Reserve Bank of New York, gender difference in choosing majors could be explained by two factors: “innate abilities and diverge preferences” [7]. More specifically, when considering major options, female students pay much attention to non-pecuniary outcomes, such as gaining approval of parents and enjoying work at jobs, while male students emphasize on pecuniary outcomes, namely social status of the jobs, likelihood of finding a job, and earnings profiles at future jobs (2009). As a result, “differences in major account for a substantial part of the gender gap in the earnings of individuals with several years of college education” (2009).
 ![](group_image/finding2_1.png)
 
-This graph presents the average income by major category, public file link:
+The graphs can be viewed on Tableau Public:
 [link](https://public.tableau.com/profile/feng.wang2440#!/vizhome/major_income_finding2_exp/Sheet1?publish=yes)
 
 The report is consistent with our finding. From the same dataset, we also explore the relationship between major and income. We generated the average income by specialized category of majors, which aggregated 170 majors into 15 border categories by ACS. From the graph, it easily stated that majoring in the fields of business would generate higher income than majoring in the fields of education: the mean income for business students was around $80,000 while the education students was only about $52,000. 
@@ -175,7 +176,7 @@ The report is consistent with our finding. From the same dataset, we also explor
 Combining with the finding that women prefered major in lower-earning fields, such as Education, while men prefer major in higher-earning fields, namely Business, we could easily conclude that gender difference in major is probably one of driver for gender pay gap.
 ![](group_image/finding2_2.png)
 
-This graph presents the income comparison between gender with same major, public file link:
+The graphs can be viewed on Tableau Public:
 [link](https://public.tableau.com/profile/feng.wang2440#!/vizhome/gender_income_with_major_category/Dashboard1?publish=yes)
 
 To see more detail, we generate a chart that compare income between gender in same majors. The graph represents early career average income between gender and over majors, the middle line (45% degree reference line) is a equity line, which means the closer to this line, the majors are more equal paid. The blue dash line and orange dash line are trend line in each group: blue group means female income is less than male income in same major, and vice versa in orange line. We can see that there are lots of majors with higher men’s income.
@@ -192,9 +193,13 @@ Major does play an important role in gender pay gap. If income is the only facto
 
 ![Graph 3](group_image/graph3.png)
 
-The graphs can be viewed on Tableau Public: [link_graph1](https://public.tableau.com/profile/tianmin.li#!/vizhome/common_occupation/Sheet1)
-[link_graph2](https://public.tableau.com/profile/tianmin.li#!/vizhome/common_occupation_business/Sheet2)
-[link_graph3](https://public.tableau.com/profile/tianmin.li#!/vizhome/psychology/Dashboard1)
+The graphs can be viewed on Tableau Public:
+
+[link_graph1](https://public.tableau.com/profile/tianmin.li#!/vizhome/common_occupation/Sheet1),
+
+[link_graph2](https://public.tableau.com/profile/tianmin.li#!/vizhome/common_occupation_business/Sheet2),
+
+[link_graph3](https://public.tableau.com/profile/tianmin.li#!/vizhome/psychology/Dashboard1),
 
 ### Description
 The first graph demonstrates that Business and Psychology graduates work in a much wider variety of occupations compared with Education and Nursing. To understand the reasons of this phenomenon, the second and third graph are drawn to see the occupations chosen by graduates from these two majors. It is shown that Business graduates can apply their skills in different industries. While most Psychology graduates with advanced degrees can practice psychology, most of those who only have a bachelor degree work in fields unrelated to their majors.
