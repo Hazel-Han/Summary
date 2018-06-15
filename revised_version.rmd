@@ -16,11 +16,11 @@ As higher education becomes an important topic for American families and individ
 ## Research Questions
 This project is looking at college education related data to see how college education changes over time and how does it affect people. Specifically, we are looking at the following research questions:
 
-What college majors are trending over years?
+**What college majors are trending over years?**
 
-How does the most popular college majors vary across gender?
+**How does the most popular college majors vary across gender?**
 
-What is the relationship between college majors and occupations?
+**What is the relationship between college majors and occupations?**
 
 This paper looks at the three research questions listed above and tries to find reasons behind them.
 
