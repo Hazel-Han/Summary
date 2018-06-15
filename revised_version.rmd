@@ -1,6 +1,9 @@
 # Revised version -- Higher Education
 ## Feng Wang, Jieyi Deng, Tianmin Li, Yingjie Yu, Zhonghe Han
 
+## Video
+[Link](https://youtu.be/YwtbK89BohQ)
+
 ## Area of Interest 
 College education is one of the most important lifetime investments, and the impact of education can last long. In this project, we would like to develop several data products to explore/visualize the area of higher education. Particularly, we are going to analyze college education enrollment trend in US over years, as well as the trend across gender. Further, the project is going to explore the returns of college education, including relationships between college majorand salary.  
 
@@ -18,16 +21,18 @@ This project is looking at college education related data to see how college edu
 
 **What college majors are trending over years?**
 
-**How does the most popular college majors vary across gender?**
+**How do popular college majors vary across gender?**
 
-**What is the relationship between college majors and occupations?**
+**What is the relationship between college major and occupation?**
 
 This paper looks at the three research questions listed above and tries to find reasons behind them.
 
 ## Data Collection, Cleaning and Integration
-Primary Dataset: ACS PUMS 2012-2016
+Primary Dataset: ACS PUMS 2012-2016 (US Census Data)
+Secondary Datasets: Mental Health and Substance Use Disorder Expenditures (National Center for Health Statistics)
+
 ### Data Collection
-Our dataset comes from United States Census. This dataset is about American Community Survey PUMS Data from 2012-2016, covers data from housing record to person record. Specificlly, from this dataset we know more about jobs and occupations, educational attainment, veterans, whether people own or rent their homes, and other topics. We choose related variables from that to help us know more insight of education. 
+Our primary dataset comes from United States Census. This dataset is about American Community Survey PUMS Data from 2012-2016, covers data from housing record to person record. Specificlly, from this dataset we know more about jobs and occupations, educational attainment, veterans, whether people own or rent their homes, and other topics. We choose related variables from that to help us know more insight of education. 
 
 ### Data Used and Explanation
 All variables we chose from our dataset are based on our exploration/research questions. First we want to see most popular majors over year and across states. So we picked up 'ST' which means different states, 'SERIALNO' gives identical number for each interviewee and include survey time. 'Fod1p' stand for specific majors. Also 'AGEP' means the exact age when people did that survey. With this four variables we can get data of people's college enrollment year, their majors and location. 
@@ -106,20 +111,20 @@ To see major names clearly we merge “census_final data with major_category dat
 ![](group_image/finding1.gif)
 The graphs can be viewed on Tableau Public: [Link](https://public.tableau.com/profile/zhonghe.han#!/vizhome/Finding1_0/Dashboard1?publish=yes)
 
-### Description: 
+### Description
 This chart shows the trends of top 6 majors over 80 years from 1935 to 2008. These six majors can be classified into four categories, including Education, Business, Nursing and Psychology. From the chart we can see that the most popular major between 1935 and 1970 was Elementary Education, with a peak in early 1970s. Majors such as Nursing and Psychology reached the local peaks in 1970 and 1973 respectively. From 1975 to 2000, two business majors gained large popularities fastly. Then they became the top two majors in this period and peaked in early 1980s. Starting early 2000s, Psychology gradually became the most popular major. 
 
-### Development Process: 
+### Development Process
 To understand the popularity trend of majors over years, we use year as x-axis and frequency of responders’ college major as y-axis. Since we have many majors, the top six majors are chosen and the frequency is counted for each major by year. We chose top six instead of top five because we found the sixth is Nursing, which can help explain the trend of psychology as well (detailed explanation will be provided below).
 
 ### Improvement and applied principle
 Compared to our first version, here we revised our charts in those aspects: 1) Removed all meaningless grids in background 2) Split original dynamic graph into four separate static charts following major categories 3) Changed color of majors, using similar color for majors belong to same category 4) Add data source below each chart to make them iterable. 
 When revising, we followed some principle mentioned in class. First thing is rules of thumb when designing data product. We found in our first version chart, grids in background and multi colors were used which were meaning less and may misleading audience. So we removes grids and applied same color system for each category. Also we follow principle of GQM(goal, question and metrics). In our first finding, the goal is giving an overview of popular major over years. With this goal our question became how to show popular majors in different time period. In order to achieve, in our chart we should show trend of different major or say give a view for each major. However in our first version, there was only a dynamic chart which is good to show trend by year but bad example to show specific information in different period. In our revised version, we choose use static chart for each time period to show detail for each time period as well as one dynamic chart to show a overall trend.
 
-### Reasoning：
+### Reasoning
 After finding the most popular majors for years, we would like to further explore reasons that may explain the popularity in specific time periods. We found that social and culture events for different time periods may largely influence the majors selected by people. 
 
-#### Education:
+#### Education
 Both elementary education and general education were the most popular majors for around 40 years from 1935 to early 1975, and peaked in 1970s. One possible explanation to this phenomenon is that there was a huge increase in investment on education after world war Ⅱ, where both the local and state government find it necessary to encourage education and decrease the number of illiterate people (Max and Esteban, 2018). This increased the demand for teachers and more people were willing to study education in university. Also, great efforts were made in 1970s to increase education equalities and create opportunities for previously disadvantaged minorities such as African Americans, immigrants, the disabled, and women [1]. Many of these efforts met with success which further increased the demand for education. 
 
 ![](group_image/finding1_1.png)
@@ -176,7 +181,7 @@ College education is a major investment in lifetime. Women increasingly particip
 ### Development Process 
 After looking the overall popular majors, we explored the top six popular majors between gender. To explore major preference in gender, we grouped the processed data file by major and  by gender to summarize total count of majors. We choose the top six popular majors  in total count because of consistent with the previous finding, and we think it’s worth to further research the most popular majors in the perspective of gender. We then looked at relationship between major and income across gender since the major difference might be a driver to gender wage gap.
 
-### Data Wrangling:
+### Data Wrangling
 ```{r}
 # Major, Gender
 data <-fread("census_final_from_R.csv")
@@ -198,7 +203,7 @@ summarise(Mean=mean(income_2016),Median=median(income_2016))
 df_2 = dcast(income_stats_by_gender, FOD1P  ~ SEX, value.var = "Mean", fun.aggregate = sum) 
 colnames(df_2) = c("code","male_mean_income","female_mean_income")
 ```
-### Revised Version Comparison: 
+### Improvement and applied principle
 Compared with the first version, we improved all of the graphs by deleting graph grid: the grids are useless and getting rid of them will decrease the data pixel ratio. Also, we added the revised title, captions, and data sources in the graphs to make our data products more readable and understandable to audience. Furthermore, we improved the graph “Average Income By Major Category” by replacing the old “colorful” graphs and using bright color to highlight, which fits the principle of analytic design.
 
 ### Explanation and Impacts on Wage Gap 
@@ -241,14 +246,14 @@ The graphs can be viewed on Tableau Public:
 ### Description
 The first graph demonstrates that Business and Psychology graduates work in a much wider variety of occupations compared with Education and Nursing. To understand the reasons of this phenomenon, the second and third graph are drawn to see the occupations chosen by graduates from these two majors. It is shown that Business graduates can apply their skills in different industries. While most Psychology graduates with advanced degrees can practice psychology, most of those who only have a bachelor degree work in fields unrelated to their majors.
 
-### Development Process:
+### Development Process
 To explore the occupations chosen by graduates, we look at the job placements of the top 6 popular majors. For each major, we only select common occupations with more than 2000 people participating in and omit minor categories to make a clear comparison. Unlike the first version, we use specific occupations instead of the industry so that we can have a clear understanding of what people are doing after graduation from a certain major. 
 
 First, we developed a bar chart (graph 1) for the count of common occupations by major. Compared with Education and Nursing, Business and Psychology graduates work in a much wider variety of occupations. Then we graph what jobs are chosen by Business and Psychology graduates (graph 2 and 3) so as to figure out reasons of variety. 
 
 We follow the audience model when developing our final version. We explore the occupations chosen by the graduates from the top 6 majors that our targeted audience, the high school seniors, will be interested in. In comparison with the first version, we replace the confusing stacked bar charts and adopt simple bar charts in all the above three graphs to convey the ideas clearly. Unnecessary background grids are removed and colors are chosen for different categories for a meaningful presentation. 
 
-### Data Wrangling:
+### Data Wrangling
 Read Data
 ```{r}
 library(data.table)
@@ -278,24 +283,28 @@ tmp <- merge(tmp,occupation, by  = 'occupation_code')%>%filter(occupation_code>0
 #export file
 write.csv(tmp,'major_and_occupation_by_degree.csv')
 ```
-### Reasoning：
+### Improvement and applied principle
+Compared to the first version, our target audience is clearly identified as students and thus the bar charts with occupation categories count has been presented to send a clear message to students. In the comparison of occupations between bachelor and advanced degree holders, grey and yellow are used to constrast with each other that helps reinforce the point and thus data pixel raio is increased. The color is also consistent with finding 2 so that the audience will not get confused.
+
+### Reasoning
 Compared with Nursing and Education, it is clearly shown in the three graphs above that Business-related majors and Psychology graduates work in a large variety of positions. This could be explained by the fact that regardless of industry, almost every company or institution will hire business-major graduates to manage funds, initiate marketing, and maintain efficient operation while rely on business principles to prosper [8]. Thus, business graduates are not only in need in industries that provide financial and consulting services, but also in almost all other fields such as health care, entertainment, construction, education and etc. In contrast, people major in Nursing and Education are trained more career-oriented that the occupations they take are restricted in the area of healthcare and educational service respectively. This may be the reason why business and management degrees are so popular in the U.S. over the past eight decades as such majors open doors to more careers than other undergraduate majors.
 
 Psychology, however, has a different story. Based on the graph, most psychology graduates with an advanced degree are working as psychologists or counsellors, while those who only have a bachelor’s degree work in fields unrelated to their majors. For those who want to practice psychology, he/ she must be licensed first and such a license typically requires a minimum of a doctoral degree in psychology from an accredited institution [9] Therefore, most psychology graduates with a bachelor’s degree cannot be a psychologist or counsellor. This may explain the reason why they need to find a job in other fields and thus their career choices are very diverse compared with other majors.
 
-This is important to our targeted audience: high school seniors. The results not only help them understand the job placements of popular college majors, but also dig into the underlying reasons for better decision-making about college majors.
+### Why this finding is important to our audience? 
+The results not only help them understand the job placements of popular college majors, but also dig into the underlying reasons for better decision-making about college majors.
 
-## Reference:
+## Reference
 [1] U*X*L American Decades. The 1970s Education: Overview. Retrieved from: http://www.encyclopedia.com 
 
 [2] History.com Staff (2011) -  Women in the Vietnam war. https://www.history.com/topics/vietnam-war/women-in-the-vietnam-war
 
-[3] Ibiza Times (2015) - ‘The Hippie movement was a Psychological Operation’. Published on its website. Retrieved from:
+[3] Ibiza Times (2015) - The Hippie movement was a Psychological Operation. Published on its website. Retrieved from:
 https://ibizatimes.wordpress.com/2015/03/02/the-hippie-movement-was-a-psychological-operation/
 
-[4] Barry Nielsen (2017) - ‘Stagflation, 1970s Style’. Published on investopedia. Retrieved from: https://www.investopedia.com/articles/economics/08/1970-stagflation.asp
+[4] Barry Nielsen (2017) - Stagflation, 1970s Style. Published on investopedia. Retrieved from: https://www.investopedia.com/articles/economics/08/1970-stagflation.asp
 
-[5] National Center for Health Statistics - ‘Health, United States, 2016 - Individual Charts and Tables: Spreadsheet, PDF, and PowerPoint files’. Retrieved from:
+[5] National Center for Health Statistics - Health, United States, 2016 - Individual Charts and Tables: Spreadsheet, PDF, and PowerPoint files. Retrieved from:
 https://www.cdc.gov/nchs/hus/contents2016.htm#mentalhealth
 
 [6] Perry M. (2017). Table of the day: Bachelor’s degrees by field and gender for the Class of 2015. AEI. Retrieved from http://www.aei.org/publication/table-of-the-day-bachelors-degrees-by-field-and-gender-for-the-class-of-2015/
@@ -306,3 +315,4 @@ https://www.cdc.gov/nchs/hus/contents2016.htm#mentalhealth
 
 [9] DITTMANN M. What you need to know to get licensed. Retrieved from: http://www.apa.org/gradpsych/2004/01/get-licensed.aspx 
 
+[10] Roser M. & Ortiz-Ospina O. (2016). Financing Education. Retrieved from: https://ourworldindata.org/financing-education
