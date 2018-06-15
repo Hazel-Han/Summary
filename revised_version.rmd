@@ -1,14 +1,26 @@
 # Revised version -- Higher Education
 ## Feng Wang, Jieyi Deng, Tianmin Li, Yingjie Yu, Zhonghe Han
 
-## Introduction
+## Area of Interest 
+College education is one of the most important lifetime investments, and the impact of education can last long. In this project, we would like to develop several data products to explore/visualize the area of higher education. Particularly, we are going to analyze college education enrollment trend in US over years, as well as the trend across gender. Further, the project is going to explore the returns of college education, including relationships between college majorand salary.  
+
+## Importance of the Topic
+Statistics suggest that college education enrollment in the US is increasing year by year. According to National Center for Education Statistics (NCES, 2018), there are 20.4 million students going to college in 2017, with an increase of 5.1 million since 2000. Specifically, around 11.5 million females and 8.9 million males are attending college in fall 2017. NCES also points out that the percentage of Hispanic and Black students attending college are going up, with Black and Hispanic went from 11.7% to 14.1% and 9.9% to 17.3% respectively from 2000 to 2015.
+
+College degree is also becoming more important in the job market. In 2015, 77.2% of bachelor’s or higher education graduates between 25 to 34 years old had full-time jobs in the labor market. In 2016, the unemployment rate (5%) for young adults with a bachelor’s degree was lower than those who did not (NCES, 2018). 
+
+At the same time, there are ongoing debates regarding whether college is worth the cost. According to a survey conducted by Pew Research Center (Taylor et al., 2011), 57% of Americans think US higher education system is not doing well and not worth the money spent. Meanwhile, 86% college graduates think that college is a good investment for their lives. 
+
+As higher education becomes an important topic for American families and individuals, it is necessary to understand how does college education change over time, what is the demand of job market and how does college education affect long term career. 
+
+## Research Questions
 This project is looking at college education related data to see how college education changes over time and how does it affect people. Specifically, we are looking at the following research questions:
 
-What college majors are trending over years?
+**What college majors are trending over years?**
 
-How does the most popular college majors vary across gender?
+**How does the most popular college majors vary across gender?**
 
-What is the relationship between college majors and occupations?
+**What is the relationship between college majors and occupations?**
 
 This paper looks at the three research questions listed above and tries to find reasons behind them.
 
