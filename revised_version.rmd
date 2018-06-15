@@ -5,8 +5,12 @@
 This project is looking at college education related data to see how college education changes over time and how does it affect people. Specifically, we are looking at the following research questions:
 
 What college majors are trending over years?
+
 How does the most popular college majors vary across gender?
-What is the relationship between college majors and occupations? This document looks at the three research questions listed above and tries to find reasons behind them.
+
+What is the relationship between college majors and occupations?
+
+This paper looks at the three research questions listed above and tries to find reasons behind them.
 
 ## Data Collection, Cleaning and Integration
 Primary Dataset: ACS PUMS 2012-2016
@@ -15,9 +19,13 @@ Our dataset comes from United States Census. This dataset is about American Comm
 
 ### Data Used and Explanation
 All variables we chose from our dataset are based on our exploration/research questions. First we want to see most popular majors over year and across states. So we picked up 'ST' which means different states, 'SERIALNO' gives identical number for each interviewee and include survey time. 'Fod1p' stand for specific majors. Also 'AGEP' means the exact age when people did that survey. With this four variables we can get data of people's college enrollment year, their majors and location. 
+
 Second we want to know most popular college majors across gender and race over years, for this question we need variables of people's majors, gender and race. Therefore we chose variables of 'SEX' which stand for male and female, as well as 'RAC1P' show race of people. 
+
 Then we care the most lucrative majors over years, here we need information of people's income and their major when graduated. We already had major data, so we included 'pincp' which means people's total income(any income sources). 
+
 Last we are interested in realtionships between college and occupations, here we need people's major and which industry field they entered after graduated. To consider it throughly, we included both 'INDP' and 'NAICSP' mean different classify method, first one is industry recode and later one is code of North American Industry Classification System. 
+
 Except variables mentioned above, we also included variable like 'ADJINC', means adjustment factor for income and earnings dollar amounts which helps us capture income more precisely,taking inflation into consideration; 'SCH','SCHG' and 'SCHL' help us segment people by with or without college experience, also college catagory; 'CITWP' which means if people were naturalized and when, we would like to see relation between immigration and major choice also its effect to state enrollment; 'COW' which stands by worker catgory, we think different major may lead to different work class. 
 
 Here is a table of variable description.
@@ -58,6 +66,7 @@ colnames(state)[2] <- "ST"
 census <- merge(x = census, y = state, by = "ST", all.x = TRUE)
 ```
 Income Inflation Adjusts
+
 Since the dataset covers surveys from 2012 - 2016, it is necessary to adjust income so as to make them comparable. Using the adjusted factor for income and earnings(ADJINC), we are able to get the total peronal income to 2016 dollars. 
 ```{r}
 census$income_2016 <- census$ADJINC*0.000001*census$PINCP
