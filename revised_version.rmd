@@ -42,7 +42,23 @@ Except variables mentioned above, we also included variable like 'ADJINC', means
 
 Here is a table of variable description.
 
-![](group_image/acs_description.png)
+**Variable Name** | **Variable Description**
+------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------
+**ST** | State Code based on 2010 Census definitions
+**ADJINC** | Adjustment factor for income and earnings dollar amounts (6 implied decimal places)
+**FOD1P** | Recoded field of degree - first entry
+**FOD2P** | Recoded field of degree - second entry
+**SCH** | School enrollment
+**SCHG** | Grade level attending
+**SCHL** | Educational attainment
+**INDP** | Industry recode based on 2012 IND codes
+**NAICSP** | NAICS Industry code based on 2012 NAICS codes
+**SEX** | Sex
+**RAC1P** | Recoded detailed race code
+**PINCP** | Total person's income (signed)
+**AGEP** | Age
+**CITWP** | Year of naturalization write-in
+**COW** | Class of worker
 
 ### Data Cleaning and Integration
 Data used for the projects come from US Census Bureau and Centers for Disease Control and Prevention. Following are the data cleaning process to retrieve the information we need to answer the research questions.
@@ -51,13 +67,13 @@ Read and Combine Raw Data
 ```{r}
 library(data.table)
 census1 = fread('ss16pusa.csv')
-census1 = census1[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO")]
+census1 = census1[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO", "OCCP")]
 census2 = fread('ss16pusb.csv')
-census2 = census2[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO")]
+census2 = census2[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO", "OCCP")]
 census3 = fread('ss16pusc.csv')
-census3 = census3[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO")]
+census3 = census3[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO", "OCCP")]
 census4 = fread('ss16pusd.csv')
-census4 = census4[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO")]
+census4 = census4[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","SERIALNO", "OCCP")]
 census = rbind(census1, census2, census3, census4)
 ```
 The research questions we looked at for the project are related to college education. As a result, we are removing the records that have missing values for the field of degree(FOD1P). 
@@ -69,7 +85,7 @@ In order to understand how popular majors change over years, it is essential to 
 census$survey_year <-substr(census$SERIALNO,1,4)
 census$survey_year <- as.numeric(census$survey_year)
 census$college_year<-census$survey_year - census$AGEP + 18
-census = census[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","survey_year", "college_year")]
+census = census[,c("ST","ADJINC","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","PINCP","AGEP","CITWP","COW","survey_year", "college_year", "OCCP")]
 ```
 Get State Name by Merging State FIP code
 ```{r}
@@ -82,7 +98,7 @@ Income Inflation Adjusts
 Since the dataset covers surveys from 2012 - 2016, it is necessary to adjust income so as to make them comparable. Using the adjusted factor for income and earnings(ADJINC), we are able to get the total peronal income to 2016 dollars. 
 ```{r}
 census$income_2016 <- census$ADJINC*0.000001*census$PINCP
-census = census[,c("ST","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","AGEP","COW","survey_year", "college_year", "stname", "stusps", "income_2016")]
+census = census[,c("ST","FOD1P","SCH","SCHG","SCHL","INDP","NAICSP","SEX","RAC1P","AGEP","COW","survey_year", "college_year", "stname", "stusps", "income_2016", "OCCP")]
 ```
 To see major names clearly we merge “census_final data with major_category data” in Tableau.
 
