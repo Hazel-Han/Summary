@@ -29,6 +29,7 @@ This paper looks at the three research questions listed above and tries to find 
 
 ## Data Collection, Cleaning and Integration
 Primary Dataset: ACS PUMS 2012-2016 (US Census Data)
+
 Secondary Datasets: Mental Health and Substance Use Disorder Expenditures (National Center for Health Statistics)
 
 ### Data Collection
@@ -293,6 +294,13 @@ Psychology, however, has a different story. Based on the graph, most psychology 
 
 ### Why this finding is important to our audience? 
 The results not only help them understand the job placements of popular college majors, but also dig into the underlying reasons for better decision-making about college majors.
+
+## Takeaways and Actions
+1. Popular majors are associated with social events. Parents and students need to make rational decisions instead of simply following the trend.
+
+2. Major could be a potential reason for the wage gap between gender. Knowing about the income of interested majors could help close pay gap.
+
+3. Even though Psychology major is trending, it is hard for students with bachelor’s degree to get a job as psychologist and counselor, and having a good plan for advanced study and understanding job requirements are important to get a dream job. 
 
 ## Reference
 [1] U*X*L American Decades. The 1970s Education: Overview. Retrieved from: http://www.encyclopedia.com 
